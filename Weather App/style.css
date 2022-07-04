@@ -1,0 +1,110 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 2em;
+    font-family: 'Open Sans', sans-serif;
+    background-color: lightgray;
+    background-image: url('https://source.unsplash.com/random/1600x900/?weather,landscape');
+
+}
+.card
+{
+    background-color: #000000d0;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    padding: 1.5em;
+    border-radius: 20px;
+    width:  50%;
+    max-width: 400px;
+    margin: 1em;
+}
+input.search_bar
+{
+    border-radius: 18px;
+    padding: 0.3em 1em;;
+    width: 15em;
+    background: #7c7c7c7c;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: open-sans;
+    font-size: 1.2em;
+
+    
+}
+button {
+    background-color: #7c7c7c7c;
+    border-radius: 50%;
+    margin-left: 1em;
+    height: 2.5em;
+    width: 2.5em;
+    border: none;
+    outline: none;
+    color: white;
+    padding-top: 0.2em;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+}
+.search
+{
+    display: flex;
+    justify-content: center;
+}
+
+button:hover
+{
+    background-color: #7c7c7c2b;
+}
+
+.description
+{
+    text-transform: capitalize;
+}
+
+.flex
+{
+    display: flex;
+    align-items: center;
+}
+
+h1.temp
+{
+    margin: 0;
+    margin-bottom: 0.2em;
+    margin-left: 0.2em;
+}
+
+.humidity
+{
+    margin-left: 0.5em;
+    margin-top: 0.2em;
+}
+
+.wind
+{
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+}
+
+.weather.loading
+{
+    visibility: hidden;
+    max-height: 25px;
+    position: relative;
+}
+
+.weather.loading::after
+{
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 15px;
+
+}
